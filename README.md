@@ -151,7 +151,7 @@ An end-to-end, production-ready pipeline for detecting helmets using the YOLOv11
 
 ---
 
-## YouTube Video Explanation & Demo
+## 16. YouTube Video Explanation & Demo
 
 [Watch the full explanation and live demo on YouTube](https://youtu.be/4A888p0OeX8)
 
