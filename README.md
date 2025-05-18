@@ -129,5 +129,3 @@ A professional-grade, end-to-end pipeline for helmet detection built on the stat
 **Outcome:** Live display window with bounding boxes, running at near real-time speeds.
 
 ---
-
-**End of README**
