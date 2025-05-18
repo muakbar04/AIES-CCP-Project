@@ -1,6 +1,6 @@
-# Helmet Detection System with YOLOv8
+# Helmet Detection System with YOLOv11
 
-An end-to-end, production-ready pipeline for detecting helmets using the YOLOv8 architecture. This repository contains a comprehensive Google Colab notebook that walks you through each step of the development process—from verifying the hardware environment and setting up dependencies, to acquiring datasets, training the model, and deploying it for real-time detection via webcam or video stream. The system leverages the robust capabilities of YOLOv8 for accurate, fast, and scalable object detection.
+An end-to-end, production-ready pipeline for detecting helmets using the YOLOv11 architecture. This repository contains a comprehensive Google Colab notebook that walks you through each step of the development process—from verifying the hardware environment and setting up dependencies, to acquiring datasets, training the model, and deploying it for real-time detection via webcam or video stream. The system leverages the robust capabilities of YOLOv11 for accurate, fast, and scalable object detection.
 
 ---
 
@@ -11,7 +11,7 @@ An end-to-end, production-ready pipeline for detecting helmets using the YOLOv8 
 3. [Sanity Check & Dependency Validation](#3-sanity-check--dependency-validation)
 4. [Import Core APIs & Visualization Tools](#4-import-core-apis--visualization-tools)
 5. [Acquire Dataset via Roboflow SDK](#5-acquire-dataset-via-roboflow-sdk)
-6. [Train YOLOv8‑Nano Model](#6-train-yolov8nano-model)
+6. [Train YOLOv11‑Nano Model](#6-train-YOLOv11nano-model)
 7. [Analyze Confusion Matrix](#7-analyze-confusion-matrix)
 8. [Evaluate Label Distribution](#8-evaluate-label-distribution)
 9. [Track Loss & mAP Metrics](#9-track-loss--map-metrics)
@@ -35,7 +35,7 @@ An end-to-end, production-ready pipeline for detecting helmets using the YOLOv8 
 
 ## 2. Install Ultralytics YOLO Package
 
-**Objective:** Install the official Ultralytics library for YOLOv8.
+**Objective:** Install the official Ultralytics library for YOLOv11.
 **Why:** Provides a unified CLI and Python API for model operations—training, evaluation, and export.
 **Outcome:** Access to `yolo` commands and Python classes for seamless workflow integration.
 
@@ -59,20 +59,20 @@ An end-to-end, production-ready pipeline for detecting helmets using the YOLOv8 
 
 ## 5. Acquire Dataset via Roboflow SDK
 
-**Objective:** Programmatically download the helmet detection dataset in YOLOv8 format.
+**Objective:** Programmatically download the helmet detection dataset in YOLOv11 format.
 **Why:** Automates dataset retrieval, ensures correct directory structure, and standardizes splits.
 **Outcome:** Local directory containing `data.yaml`, and `train/`, `valid/`, `test/` partitions with images and labels.
 
 ---
 
-## 6. Train YOLOv8‑Nano Model
+## 6. Train YOLOv11‑Nano Model
 
-**Objective:** Execute a high-performance training session using the YOLOv8‑Nano variant.
+**Objective:** Execute a high-performance training session using the YOLOv11‑Nano variant.
 **Why:** Balances model size and speed for rapid iteration, suitable for limited-resource environments.
 **Key Parameters:**
 
 * `data` path to dataset config
-* Pretrained `yolov8n.pt` weights
+* Pretrained `YOLOv11n.pt` weights
 * `epochs` count for convergence
 * `imgsz` resolution
   **Outcome:** Trained model checkpoints saved to `runs/detect` directory.
